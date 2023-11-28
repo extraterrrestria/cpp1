@@ -75,6 +75,7 @@ int main()
 
 S = (katet1 * katet2 / 2); // считаю площадь треугольника
 std::cout << "S = " << S << std::endl;
+std::cout << "Gip = " << Gip << std::endl;
 return 0;
 }  */
 
