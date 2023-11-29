@@ -332,20 +332,20 @@ int main() {
   std::cout << "Enter the cost of one minute: ";
   double cost = 0;
   std::cin >> cost;
-  if (day < 1 && day > 7) { // дня недели не существует
-      std::cout << "Invalid week day";
-      exit(1);
-  }
+ 
   if (day == 6 || day == 7)
   {
     double final = call * cost * 0.8;
     std::cout << final;
   }
-  else
+  else if (1 <= day && day <= 5)
   {
     double final = call * cost;
     std::cout << final;
 
+  }
+  else {
+      std::cout << "Invalid week day"; // дня недели не существует
   }
 
   return 0;
