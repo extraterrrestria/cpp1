@@ -602,7 +602,7 @@ int main()
     std::cin >> a >> b >> c >> d;
 
     if (a > 0 && b > 0 && c > 0 && d > 0) {
-        if ((a < c && b < d)  (a < d && b < c)) {
+        if ((a < c && b < d) || (a < d && b < c)) {
 
             std::cout << "Yes, you can";
         }
