@@ -503,7 +503,7 @@ int main() {
   int cop = 0;
   std::cin >> cop;
 
-  if (cop % 100 == 11  cop % 100 == 12  cop % 100 == 13  cop % 100 == 14) { // подбираем склонения копейкам
+  if (cop % 100 == 11 || cop % 100 == 12 || cop % 100 == 13 || cop % 100 == 14) { // подбираем склонения копейкам
     std::cout << cop << " copeeck " << std::endl;
   }
   else if (cop % 10 == 1) {
